@@ -1,0 +1,155 @@
+/* Reset and base */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--fg);
+  background: radial-gradient(1200px 800px at 80% -10%, hsl(160 60% 96%) 0%, transparent 60%),
+              radial-gradient(1000px 700px at 10% 110%, hsl(196 50% 95%) 0%, transparent 65%),
+              linear-gradient(180deg, hsl(0 0% 100%), hsl(210 30% 98%));
+}
+
+:root {
+  color-scheme: light dark;
+  --fg: hsl(222 25% 16%);
+  --muted: hsl(222 16% 40%);
+  --card: hsl(0 0% 100% / 0.7);
+  --card-border: hsl(222 30% 80% / 0.4);
+  --accent: hsl(160 65% 42%); /* green */
+  --accent-2: hsl(200 70% 50%); /* blue */
+  --fringe: hsl(40 30% 78% / 0.7);
+  --shadow: 0 10px 30px hsl(220 30% 20% / 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: hsl(220 20% 92%);
+    --muted: hsl(220 12% 70%);
+    --card: hsl(220 20% 10% / 0.5);
+    --card-border: hsl(220 30% 40% / 0.3);
+    --accent: hsl(160 70% 55%);
+    --accent-2: hsl(198 75% 60%);
+    --fringe: hsl(40 20% 70% / 0.35);
+    --shadow: 0 10px 30px hsl(220 80% 2% / 0.5);
+  }
+  body {
+    background: radial-gradient(1200px 800px at 80% -10%, hsl(160 35% 12% / 0.6) 0%, transparent 60%),
+                radial-gradient(1000px 700px at 10% 110%, hsl(196 35% 14% / 0.6) 0%, transparent 65%),
+                linear-gradient(180deg, hsl(220 20% 8%), hsl(220 20% 6%));
+  }
+}
+
+/* Layout */
+.page {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1rem;
+}
+
+/* Ornate rug while page stays minimal */
+.rug {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background:
+    /* subtle weave texture */
+    repeating-linear-gradient(45deg, hsl(220 10% 20% / 0.03) 0 6px, transparent 6px 12px),
+    /* rosette rings */
+    conic-gradient(from 0deg at 50% 50%, transparent 0 10deg, hsl(0 0% 100% / 0.08) 10deg 20deg, transparent 20deg 30deg, hsl(0 0% 100% / 0.08) 30deg 40deg, transparent 40deg 360deg),
+    /* central medallion */
+    radial-gradient(circle at 50% 50%, hsl(0 0% 100% / 0.08) 0 120px, transparent 130px),
+    /* floral dots and corner motifs */
+    radial-gradient(circle at 10% 12%, var(--accent) 0 2px, transparent 3px) 0 0/28px 28px,
+    radial-gradient(circle at 90% 88%, var(--accent-2) 0 2px, transparent 3px) 0 0/32px 32px,
+    radial-gradient(circle at 20% 85%, var(--accent) 0 2px, transparent 3px) 0 0/26px 26px,
+    radial-gradient(circle at 85% 20%, var(--accent-2) 0 2px, transparent 3px) 0 0/30px 30px,
+    /* diagonal lattice */
+    linear-gradient(135deg, transparent 0 49%, var(--card-border) 50% 50%, transparent 51%) 0 0/12px 12px,
+    /* border ornaments */
+    conic-gradient(from 0.25turn at 50% 50%, transparent 0.125turn, var(--card-border) 0.125turn 0.25turn, transparent 0.25turn 0.375turn, var(--card-border) 0.375turn 0.5turn, transparent 0.5turn 0.625turn, var(--card-border) 0.625turn 0.75turn, transparent 0.75turn 0.875turn, var(--card-border) 0.875turn 1turn);
+}
+
+.rug::after {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 1.6rem;
+  background:
+    /* colorful border fade */
+    linear-gradient(90deg, var(--accent), transparent 30% 70%, var(--accent-2)),
+    /* border stitches */
+    repeating-linear-gradient(0deg, transparent 0 7px, var(--card-border) 7px 8px);
+  z-index: -1;
+  filter: blur(8px) saturate(120%);
+}
+
+/* add fringes at top and bottom */
+.rug::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 1.6rem;
+  background:
+    repeating-linear-gradient(90deg, var(--fringe) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(90deg, var(--fringe) 0 2px, transparent 2px 6px);
+  background-size: calc(100% - 48px) 12px, calc(100% - 48px) 12px;
+  background-position: top 8px center, bottom 8px center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card {
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  max-width: 680px;
+  padding: 2rem;
+}
+
+.header { text-align: center; margin-bottom: 1rem; }
+.avatar {
+  width: 64px; height: 64px;
+  margin: 0 auto 0.75rem;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  clip-path: circle(50% at 50% 50%);
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 50%; }
+
+.name { margin: 0 0 0.5rem; font-weight: 800; font-size: clamp(1.4rem, 3vw, 2rem); }
+.subtitle { margin: 0; color: var(--muted); font-weight: 400; }
+
+.bio { margin: 1.25rem 0; }
+.facts { margin: 0 0 1.25rem; padding: 0 1.25rem; }
+.facts li { margin: 0.25rem 0; }
+
+.links { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
+.link {
+  text-decoration: none;
+  color: var(--fg);
+  border: 1px solid var(--card-border);
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, hsl(0 0% 100% / 0.5), hsl(0 0% 100% / 0.2));
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+}
+  .link { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .link .icon { width: 16px; height: 16px; fill: currentColor; display: inline-block; }
+.link:hover { transform: translateY(-1px); border-color: var(--accent); }
+.link:active { transform: translateY(0); }
+
+.footer { margin-top: 1.25rem; color: var(--muted); text-align: center; }
+
+@media (max-width: 520px) {
+  .card { padding: 1.25rem; }
+}
