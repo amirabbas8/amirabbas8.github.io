@@ -1,7 +1,7 @@
 AmirAbbas
 
 Overview
-- Minimal, modern RTL Persian personal page with a subtle Persian rug aesthetic
+- Minimal personal page set on a Persian rug
 - Static files: `index.html`, `styles.css`
 
 

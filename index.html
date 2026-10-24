@@ -19,6 +19,329 @@
   <body>
     <main class="page">
       <section class="rug">
+      <svg class="rug-field" aria-hidden="true">
+  <defs>
+    <pattern id="abrash" width="90" height="170" patternUnits="userSpaceOnUse">
+      <rect y="18" width="90" height="18" class="fill-field-2" opacity="0.55"/>
+      <rect y="96" width="90" height="24" class="fill-field-2" opacity="0.4"/>
+      <rect y="138" width="90" height="8" class="fill-madder" opacity="0.06"/>
+    </pattern>
+    <pattern id="field" width="136" height="154" patternUnits="userSpaceOnUse">
+      <path d="M68 0 L136 77 L68 154 L0 77 Z" class="lattice"/>
+      <polygon points="68,70 74,77 68,84 62,77" class="fill-gold"/>
+      <g transform="translate(22 18) scale(0.5)"><path class="fill-ink" d="M24 2c2 10 12 16 14 30 2 16-4 34-12 44-6 8-16 8-16-2 0-8 6-12 8-18-8-2-14-12-12-26C8 16 14 8 22 6c0-3 1-4 2-4z"/>
+<path class="fill-madder" d="M26 28c6 6 6 22 0 32-4-8-4-20 0-32z"/>
+<path class="fill-gold" d="M24 8c1 4 0 7-2 8 2 0 3-3 2-8z"/></g>
+      <g transform="translate(118 140) scale(-0.5)"><path class="fill-ink" d="M24 2c2 10 12 16 14 30 2 16-4 34-12 44-6 8-16 8-16-2 0-8 6-12 8-18-8-2-14-12-12-26C8 16 14 8 22 6c0-3 1-4 2-4z"/>
+<path class="fill-madder" d="M26 28c6 6 6 22 0 32-4-8-4-20 0-32z"/>
+<path class="fill-gold" d="M24 8c1 4 0 7-2 8 2 0 3-3 2-8z"/></g>
+      <g transform="translate(100 30) scale(1)">
+  <circle cy="-5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="3.7" cy="-3.7" r="2.3" class="fill-madder"/>
+  <circle cx="5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="3.7" cy="3.7" r="2.3" class="fill-madder"/>
+  <circle cy="5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="-3.7" cy="3.7" r="2.3" class="fill-madder"/>
+  <circle cx="-5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="-3.7" cy="-3.7" r="2.3" class="fill-madder"/>
+  <circle r="2.7" class="fill-gold"/>
+  <circle r="1.15" class="fill-ivory"/>
+</g>
+      <g transform="translate(34 112) scale(0.85)">
+  <circle cy="-5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="3.7" cy="-3.7" r="2.3" class="fill-madder"/>
+  <circle cx="5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="3.7" cy="3.7" r="2.3" class="fill-madder"/>
+  <circle cy="5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="-3.7" cy="3.7" r="2.3" class="fill-madder"/>
+  <circle cx="-5.2" r="2.3" class="fill-turquoise"/>
+  <circle cx="-3.7" cy="-3.7" r="2.3" class="fill-madder"/>
+  <circle r="2.7" class="fill-gold"/>
+  <circle r="1.15" class="fill-ivory"/>
+</g>
+    </pattern>
+    <radialGradient id="vig" cx="50%" cy="46%" r="68%">
+      <stop offset="58%" class="vig-mid"/>
+      <stop offset="100%" class="vig-edge"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" class="fill-field"/>
+  <rect width="100%" height="100%" fill="url(#abrash)"/>
+  <rect width="100%" height="100%" fill="url(#field)"/>
+  <rect width="100%" height="100%" fill="url(#vig)"/>
+</svg>
+      <div class="medallion" aria-hidden="true">
+        <svg viewBox="-220 -275 440 550" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path d="M 0.0 -217.3 L 7.1 -205.3 L 13.1 -190.4 L 18.3 -175.9 L 23.0 -165.1 L 27.9 -159.4 L 33.4 -158.0 L 39.4 -158.1 L 45.2 -156.9 L 49.9 -152.1 L 53.1 -143.8 L 55.1 -133.6 L 56.8 -124.1 L 59.4 -117.3 L 63.5 -114.0 L 69.2 -113.2 L 75.6 -112.8 L 81.2 -110.7 L 84.9 -105.9 L 86.5 -98.6 L 86.8 -90.3 L 87.4 -82.8 L 90.0 -77.4 L 95.1 -74.1 L 102.5 -71.9 L 110.3 -69.3 L 116.7 -65.0 L 120.3 -58.9 L 121.3 -51.4 L 121.1 -43.6 L 122.3 -36.4 L 126.6 -30.0 L 134.9 -23.8 L 146.0 -17.1 L 157.5 -9.2 L 166.7 0.0 L 157.5 9.2 L 146.0 17.1 L 134.9 23.8 L 126.6 30.0 L 122.3 36.4 L 121.1 43.6 L 121.3 51.4 L 120.3 58.9 L 116.7 65.0 L 110.3 69.3 L 102.5 71.9 L 95.1 74.1 L 90.0 77.4 L 87.4 82.8 L 86.8 90.3 L 86.5 98.6 L 84.9 105.9 L 81.2 110.7 L 75.6 112.8 L 69.2 113.2 L 63.5 114.0 L 59.4 117.3 L 56.8 124.1 L 55.1 133.6 L 53.1 143.8 L 49.9 152.1 L 45.2 156.9 L 39.4 158.1 L 33.4 158.0 L 27.9 159.4 L 23.0 165.1 L 18.3 175.9 L 13.1 190.4 L 7.1 205.3 L 0.0 217.3 L -7.1 205.3 L -13.1 190.4 L -18.3 175.9 L -23.0 165.1 L -27.9 159.4 L -33.4 158.0 L -39.4 158.1 L -45.2 156.9 L -49.9 152.1 L -53.1 143.8 L -55.1 133.6 L -56.8 124.1 L -59.4 117.3 L -63.5 114.0 L -69.2 113.2 L -75.6 112.8 L -81.2 110.7 L -84.9 105.9 L -86.5 98.6 L -86.8 90.3 L -87.4 82.8 L -90.0 77.4 L -95.1 74.1 L -102.5 71.9 L -110.3 69.3 L -116.7 65.0 L -120.3 58.9 L -121.3 51.4 L -121.1 43.6 L -122.3 36.4 L -126.6 30.0 L -134.9 23.8 L -146.0 17.1 L -157.5 9.2 L -166.7 0.0 L -157.5 -9.2 L -146.0 -17.1 L -134.9 -23.8 L -126.6 -30.0 L -122.3 -36.4 L -121.1 -43.6 L -121.3 -51.4 L -120.3 -58.9 L -116.7 -65.0 L -110.3 -69.3 L -102.5 -71.9 L -95.1 -74.1 L -90.0 -77.4 L -87.4 -82.8 L -86.8 -90.3 L -86.5 -98.6 L -84.9 -105.9 L -81.2 -110.7 L -75.6 -112.8 L -69.2 -113.2 L -63.5 -114.0 L -59.4 -117.3 L -56.8 -124.1 L -55.1 -133.6 L -53.1 -143.8 L -49.9 -152.1 L -45.2 -156.9 L -39.4 -158.1 L -33.4 -158.0 L -27.9 -159.4 L -23.0 -165.1 L -18.3 -175.9 L -13.1 -190.4 L -7.1 -205.3 Z" class="toranj-outer"/>
+  <path d="M 0.0 -217.3 L 7.1 -205.3 L 13.1 -190.4 L 18.3 -175.9 L 23.0 -165.1 L 27.9 -159.4 L 33.4 -158.0 L 39.4 -158.1 L 45.2 -156.9 L 49.9 -152.1 L 53.1 -143.8 L 55.1 -133.6 L 56.8 -124.1 L 59.4 -117.3 L 63.5 -114.0 L 69.2 -113.2 L 75.6 -112.8 L 81.2 -110.7 L 84.9 -105.9 L 86.5 -98.6 L 86.8 -90.3 L 87.4 -82.8 L 90.0 -77.4 L 95.1 -74.1 L 102.5 -71.9 L 110.3 -69.3 L 116.7 -65.0 L 120.3 -58.9 L 121.3 -51.4 L 121.1 -43.6 L 122.3 -36.4 L 126.6 -30.0 L 134.9 -23.8 L 146.0 -17.1 L 157.5 -9.2 L 166.7 0.0 L 157.5 9.2 L 146.0 17.1 L 134.9 23.8 L 126.6 30.0 L 122.3 36.4 L 121.1 43.6 L 121.3 51.4 L 120.3 58.9 L 116.7 65.0 L 110.3 69.3 L 102.5 71.9 L 95.1 74.1 L 90.0 77.4 L 87.4 82.8 L 86.8 90.3 L 86.5 98.6 L 84.9 105.9 L 81.2 110.7 L 75.6 112.8 L 69.2 113.2 L 63.5 114.0 L 59.4 117.3 L 56.8 124.1 L 55.1 133.6 L 53.1 143.8 L 49.9 152.1 L 45.2 156.9 L 39.4 158.1 L 33.4 158.0 L 27.9 159.4 L 23.0 165.1 L 18.3 175.9 L 13.1 190.4 L 7.1 205.3 L 0.0 217.3 L -7.1 205.3 L -13.1 190.4 L -18.3 175.9 L -23.0 165.1 L -27.9 159.4 L -33.4 158.0 L -39.4 158.1 L -45.2 156.9 L -49.9 152.1 L -53.1 143.8 L -55.1 133.6 L -56.8 124.1 L -59.4 117.3 L -63.5 114.0 L -69.2 113.2 L -75.6 112.8 L -81.2 110.7 L -84.9 105.9 L -86.5 98.6 L -86.8 90.3 L -87.4 82.8 L -90.0 77.4 L -95.1 74.1 L -102.5 71.9 L -110.3 69.3 L -116.7 65.0 L -120.3 58.9 L -121.3 51.4 L -121.1 43.6 L -122.3 36.4 L -126.6 30.0 L -134.9 23.8 L -146.0 17.1 L -157.5 9.2 L -166.7 0.0 L -157.5 -9.2 L -146.0 -17.1 L -134.9 -23.8 L -126.6 -30.0 L -122.3 -36.4 L -121.1 -43.6 L -121.3 -51.4 L -120.3 -58.9 L -116.7 -65.0 L -110.3 -69.3 L -102.5 -71.9 L -95.1 -74.1 L -90.0 -77.4 L -87.4 -82.8 L -86.8 -90.3 L -86.5 -98.6 L -84.9 -105.9 L -81.2 -110.7 L -75.6 -112.8 L -69.2 -113.2 L -63.5 -114.0 L -59.4 -117.3 L -56.8 -124.1 L -55.1 -133.6 L -53.1 -143.8 L -49.9 -152.1 L -45.2 -156.9 L -39.4 -158.1 L -33.4 -158.0 L -27.9 -159.4 L -23.0 -165.1 L -18.3 -175.9 L -13.1 -190.4 L -7.1 -205.3 Z" class="toranj-line"/>
+  <circle cx="0.0" cy="-199.7" r="3.2" class="pearl"/>
+<circle cx="21.4" cy="-157.1" r="3.2" class="pearl"/>
+<circle cx="40.7" cy="-145.1" r="3.2" class="pearl"/>
+<circle cx="53.1" cy="-119.3" r="3.2" class="pearl"/>
+<circle cx="68.0" cy="-105.1" r="3.2" class="pearl"/>
+<circle cx="81.0" cy="-88.2" r="3.2" class="pearl"/>
+<circle cx="92.0" cy="-68.9" r="3.2" class="pearl"/>
+<circle cx="111.8" cy="-52.8" r="3.2" class="pearl"/>
+<circle cx="121.1" cy="-27.7" r="3.2" class="pearl"/>
+<circle cx="153.9" cy="0.0" r="3.2" class="pearl"/>
+<circle cx="121.1" cy="27.7" r="3.2" class="pearl"/>
+<circle cx="111.8" cy="52.8" r="3.2" class="pearl"/>
+<circle cx="92.0" cy="68.9" r="3.2" class="pearl"/>
+<circle cx="81.0" cy="88.2" r="3.2" class="pearl"/>
+<circle cx="68.0" cy="105.1" r="3.2" class="pearl"/>
+<circle cx="53.1" cy="119.3" r="3.2" class="pearl"/>
+<circle cx="40.7" cy="145.1" r="3.2" class="pearl"/>
+<circle cx="21.4" cy="157.1" r="3.2" class="pearl"/>
+<circle cx="0.0" cy="199.7" r="3.2" class="pearl"/>
+<circle cx="-21.4" cy="157.1" r="3.2" class="pearl"/>
+<circle cx="-40.7" cy="145.1" r="3.2" class="pearl"/>
+<circle cx="-53.1" cy="119.3" r="3.2" class="pearl"/>
+<circle cx="-68.0" cy="105.1" r="3.2" class="pearl"/>
+<circle cx="-81.0" cy="88.2" r="3.2" class="pearl"/>
+<circle cx="-92.0" cy="68.9" r="3.2" class="pearl"/>
+<circle cx="-111.8" cy="52.8" r="3.2" class="pearl"/>
+<circle cx="-121.1" cy="27.7" r="3.2" class="pearl"/>
+<circle cx="-153.9" cy="0.0" r="3.2" class="pearl"/>
+<circle cx="-121.1" cy="-27.7" r="3.2" class="pearl"/>
+<circle cx="-111.8" cy="-52.8" r="3.2" class="pearl"/>
+<circle cx="-92.0" cy="-68.9" r="3.2" class="pearl"/>
+<circle cx="-81.0" cy="-88.2" r="3.2" class="pearl"/>
+<circle cx="-68.0" cy="-105.1" r="3.2" class="pearl"/>
+<circle cx="-53.1" cy="-119.3" r="3.2" class="pearl"/>
+<circle cx="-40.7" cy="-145.1" r="3.2" class="pearl"/>
+<circle cx="-21.4" cy="-157.1" r="3.2" class="pearl"/>
+  <path d="M 0.0 -166.9 L 5.4 -158.3 L 10.1 -147.9 L 14.0 -137.0 L 17.4 -126.9 L 20.5 -119.0 L 23.7 -113.7 L 27.3 -111.1 L 31.3 -110.3 L 35.7 -110.3 L 40.0 -109.9 L 44.0 -108.1 L 47.2 -104.4 L 49.4 -98.9 L 50.7 -92.3 L 51.5 -85.4 L 52.4 -79.2 L 53.8 -74.4 L 56.3 -71.1 L 59.9 -69.2 L 64.6 -68.1 L 69.8 -67.1 L 74.8 -65.3 L 79.0 -62.4 L 81.7 -58.2 L 83.1 -52.9 L 83.4 -47.2 L 83.4 -41.4 L 84.0 -36.1 L 86.0 -31.4 L 90.0 -27.2 L 96.0 -23.0 L 103.6 -18.6 L 111.8 -13.3 L 119.7 -7.1 L 126.3 0.0 L 119.7 7.1 L 111.8 13.3 L 103.6 18.6 L 96.0 23.0 L 90.0 27.2 L 86.0 31.4 L 84.0 36.1 L 83.4 41.4 L 83.4 47.2 L 83.1 52.9 L 81.7 58.2 L 79.0 62.4 L 74.8 65.3 L 69.8 67.1 L 64.6 68.1 L 59.9 69.2 L 56.3 71.1 L 53.8 74.4 L 52.4 79.2 L 51.5 85.4 L 50.7 92.3 L 49.4 98.9 L 47.2 104.4 L 44.0 108.1 L 40.0 109.9 L 35.7 110.3 L 31.3 110.3 L 27.3 111.1 L 23.7 113.7 L 20.5 119.0 L 17.4 126.9 L 14.0 137.0 L 10.1 147.9 L 5.4 158.3 L 0.0 166.9 L -5.4 158.3 L -10.1 147.9 L -14.0 137.0 L -17.4 126.9 L -20.5 119.0 L -23.7 113.7 L -27.3 111.1 L -31.3 110.3 L -35.7 110.3 L -40.0 109.9 L -44.0 108.1 L -47.2 104.4 L -49.4 98.9 L -50.7 92.3 L -51.5 85.4 L -52.4 79.2 L -53.8 74.4 L -56.3 71.1 L -59.9 69.2 L -64.6 68.1 L -69.8 67.1 L -74.8 65.3 L -79.0 62.4 L -81.7 58.2 L -83.1 52.9 L -83.4 47.2 L -83.4 41.4 L -84.0 36.1 L -86.0 31.4 L -90.0 27.2 L -96.0 23.0 L -103.6 18.6 L -111.8 13.3 L -119.7 7.1 L -126.3 0.0 L -119.7 -7.1 L -111.8 -13.3 L -103.6 -18.6 L -96.0 -23.0 L -90.0 -27.2 L -86.0 -31.4 L -84.0 -36.1 L -83.4 -41.4 L -83.4 -47.2 L -83.1 -52.9 L -81.7 -58.2 L -79.0 -62.4 L -74.8 -65.3 L -69.8 -67.1 L -64.6 -68.1 L -59.9 -69.2 L -56.3 -71.1 L -53.8 -74.4 L -52.4 -79.2 L -51.5 -85.4 L -50.7 -92.3 L -49.4 -98.9 L -47.2 -104.4 L -44.0 -108.1 L -40.0 -109.9 L -35.7 -110.3 L -31.3 -110.3 L -27.3 -111.1 L -23.7 -113.7 L -20.5 -119.0 L -17.4 -126.9 L -14.0 -137.0 L -10.1 -147.9 L -5.4 -158.3 Z" class="toranj-mid"/>
+  <path d="M 0.0 -108.0 L 3.4 -102.9 L 6.5 -97.3 L 9.2 -91.4 L 11.5 -85.5 L 13.5 -80.0 L 15.3 -74.9 L 17.0 -70.6 L 18.6 -67.1 L 20.4 -64.5 L 22.3 -62.6 L 24.5 -61.4 L 26.8 -60.6 L 29.3 -60.0 L 31.9 -59.4 L 34.5 -58.4 L 36.9 -57.0 L 39.0 -55.1 L 40.8 -52.7 L 42.2 -49.8 L 43.2 -46.6 L 43.9 -43.1 L 44.4 -39.6 L 44.9 -36.2 L 45.5 -33.1 L 46.3 -30.2 L 47.7 -27.6 L 49.7 -25.2 L 52.2 -22.9 L 55.4 -20.7 L 59.2 -18.3 L 63.3 -15.5 L 67.6 -12.4 L 72.0 -8.8 L 76.1 -4.6 L 79.9 0.0 L 76.1 4.6 L 72.0 8.8 L 67.6 12.4 L 63.3 15.5 L 59.2 18.3 L 55.4 20.7 L 52.2 22.9 L 49.7 25.2 L 47.7 27.6 L 46.3 30.2 L 45.5 33.1 L 44.9 36.2 L 44.4 39.6 L 43.9 43.1 L 43.2 46.6 L 42.2 49.8 L 40.8 52.7 L 39.0 55.1 L 36.9 57.0 L 34.5 58.4 L 31.9 59.4 L 29.3 60.0 L 26.8 60.6 L 24.5 61.4 L 22.3 62.6 L 20.4 64.5 L 18.6 67.1 L 17.0 70.6 L 15.3 74.9 L 13.5 80.0 L 11.5 85.5 L 9.2 91.4 L 6.5 97.3 L 3.4 102.9 L 0.0 108.0 L -3.4 102.9 L -6.5 97.3 L -9.2 91.4 L -11.5 85.5 L -13.5 80.0 L -15.3 74.9 L -17.0 70.6 L -18.6 67.1 L -20.4 64.5 L -22.3 62.6 L -24.5 61.4 L -26.8 60.6 L -29.3 60.0 L -31.9 59.4 L -34.5 58.4 L -36.9 57.0 L -39.0 55.1 L -40.8 52.7 L -42.2 49.8 L -43.2 46.6 L -43.9 43.1 L -44.4 39.6 L -44.9 36.2 L -45.5 33.1 L -46.3 30.2 L -47.7 27.6 L -49.7 25.2 L -52.2 22.9 L -55.4 20.7 L -59.2 18.3 L -63.3 15.5 L -67.6 12.4 L -72.0 8.8 L -76.1 4.6 L -79.9 0.0 L -76.1 -4.6 L -72.0 -8.8 L -67.6 -12.4 L -63.3 -15.5 L -59.2 -18.3 L -55.4 -20.7 L -52.2 -22.9 L -49.7 -25.2 L -47.7 -27.6 L -46.3 -30.2 L -45.5 -33.1 L -44.9 -36.2 L -44.4 -39.6 L -43.9 -43.1 L -43.2 -46.6 L -42.2 -49.8 L -40.8 -52.7 L -39.0 -55.1 L -36.9 -57.0 L -34.5 -58.4 L -31.9 -59.4 L -29.3 -60.0 L -26.8 -60.6 L -24.5 -61.4 L -22.3 -62.6 L -20.4 -64.5 L -18.6 -67.1 L -17.0 -70.6 L -15.3 -74.9 L -13.5 -80.0 L -11.5 -85.5 L -9.2 -91.4 L -6.5 -97.3 L -3.4 -102.9 Z" class="toranj-inner"/>
+  <path d="M 0.00 -70.00 L 11.10 -26.79 L 49.50 -49.50 L 26.79 -11.10 L 70.00 0.00 L 26.79 11.10 L 49.50 49.50 L 11.10 26.79 L 0.00 70.00 L -11.10 26.79 L -49.50 49.50 L -26.79 11.10 L -70.00 0.00 L -26.79 -11.10 L -49.50 -49.50 L -11.10 -26.79 Z" class="fill-border"/>
+  <path d="M 16.84 -40.65 L 12.73 -12.73 L 40.65 -16.84 L 18.00 0.00 L 40.65 16.84 L 12.73 12.73 L 16.84 40.65 L 0.00 18.00 L -16.84 40.65 L -12.73 12.73 L -40.65 16.84 L -18.00 0.00 L -40.65 -16.84 L -12.73 -12.73 L -16.84 -40.65 L -0.00 -18.00 Z" class="fill-turquoise"/>
+  <path d="M 0.00 -24.00 L 3.83 -9.24 L 16.97 -16.97 L 9.24 -3.83 L 24.00 0.00 L 9.24 3.83 L 16.97 16.97 L 3.83 9.24 L 0.00 24.00 L -3.83 9.24 L -16.97 16.97 L -9.24 3.83 L -24.00 0.00 L -9.24 -3.83 L -16.97 -16.97 L -3.83 -9.24 Z" class="fill-gold"/>
+  <circle r="8" class="fill-madder"/>
+  <circle r="3.4" class="fill-ivory"/>
+</svg>
+      </div>
+      <div class="spandrel spandrel-tl" aria-hidden="true"><svg viewBox="0 0 300 300" aria-hidden="true">
+  <g transform="translate(150 150)">
+    <circle r="128" class="fill-border"/>
+    <circle r="120" class="ring-gold" stroke-width="3"/>
+    <circle r="112" class="fill-madder"/>
+    <circle r="104" class="fill-ivory"/>
+    <circle r="100" class="ring-gold" stroke-width="1.6"/>
+    <path d="M 0.00 -96.00 L 15.31 -36.96 L 67.88 -67.88 L 36.96 -15.31 L 96.00 0.00 L 36.96 15.31 L 67.88 67.88 L 15.31 36.96 L 0.00 96.00 L -15.31 36.96 L -67.88 67.88 L -36.96 15.31 L -96.00 0.00 L -36.96 -15.31 L -67.88 -67.88 L -15.31 -36.96 Z" class="fill-border"/>
+    <path d="M 22.20 -53.59 L 16.97 -16.97 L 53.59 -22.20 L 24.00 0.00 L 53.59 22.20 L 16.97 16.97 L 22.20 53.59 L 0.00 24.00 L -22.20 53.59 L -16.97 16.97 L -53.59 22.20 L -24.00 0.00 L -53.59 -22.20 L -16.97 -16.97 L -22.20 -53.59 L -0.00 -24.00 Z" class="fill-turquoise"/>
+    <path d="M 0.00 -30.00 L 4.59 -11.09 L 21.21 -21.21 L 11.09 -4.59 L 30.00 0.00 L 11.09 4.59 L 21.21 21.21 L 4.59 11.09 L 0.00 30.00 L -4.59 11.09 L -21.21 21.21 L -11.09 4.59 L -30.00 0.00 L -11.09 -4.59 L -21.21 -21.21 L -4.59 -11.09 Z" class="fill-gold"/>
+    <circle r="8" class="fill-madder"/>
+    <circle r="3.2" class="fill-ivory"/>
+  </g>
+</svg></div>
+      <div class="spandrel spandrel-tr" aria-hidden="true"><svg viewBox="0 0 300 300" aria-hidden="true">
+  <g transform="translate(150 150)">
+    <circle r="128" class="fill-border"/>
+    <circle r="120" class="ring-gold" stroke-width="3"/>
+    <circle r="112" class="fill-madder"/>
+    <circle r="104" class="fill-ivory"/>
+    <circle r="100" class="ring-gold" stroke-width="1.6"/>
+    <path d="M 0.00 -96.00 L 15.31 -36.96 L 67.88 -67.88 L 36.96 -15.31 L 96.00 0.00 L 36.96 15.31 L 67.88 67.88 L 15.31 36.96 L 0.00 96.00 L -15.31 36.96 L -67.88 67.88 L -36.96 15.31 L -96.00 0.00 L -36.96 -15.31 L -67.88 -67.88 L -15.31 -36.96 Z" class="fill-border"/>
+    <path d="M 22.20 -53.59 L 16.97 -16.97 L 53.59 -22.20 L 24.00 0.00 L 53.59 22.20 L 16.97 16.97 L 22.20 53.59 L 0.00 24.00 L -22.20 53.59 L -16.97 16.97 L -53.59 22.20 L -24.00 0.00 L -53.59 -22.20 L -16.97 -16.97 L -22.20 -53.59 L -0.00 -24.00 Z" class="fill-turquoise"/>
+    <path d="M 0.00 -30.00 L 4.59 -11.09 L 21.21 -21.21 L 11.09 -4.59 L 30.00 0.00 L 11.09 4.59 L 21.21 21.21 L 4.59 11.09 L 0.00 30.00 L -4.59 11.09 L -21.21 21.21 L -11.09 4.59 L -30.00 0.00 L -11.09 -4.59 L -21.21 -21.21 L -4.59 -11.09 Z" class="fill-gold"/>
+    <circle r="8" class="fill-madder"/>
+    <circle r="3.2" class="fill-ivory"/>
+  </g>
+</svg></div>
+      <div class="spandrel spandrel-bl" aria-hidden="true"><svg viewBox="0 0 300 300" aria-hidden="true">
+  <g transform="translate(150 150)">
+    <circle r="128" class="fill-border"/>
+    <circle r="120" class="ring-gold" stroke-width="3"/>
+    <circle r="112" class="fill-madder"/>
+    <circle r="104" class="fill-ivory"/>
+    <circle r="100" class="ring-gold" stroke-width="1.6"/>
+    <path d="M 0.00 -96.00 L 15.31 -36.96 L 67.88 -67.88 L 36.96 -15.31 L 96.00 0.00 L 36.96 15.31 L 67.88 67.88 L 15.31 36.96 L 0.00 96.00 L -15.31 36.96 L -67.88 67.88 L -36.96 15.31 L -96.00 0.00 L -36.96 -15.31 L -67.88 -67.88 L -15.31 -36.96 Z" class="fill-border"/>
+    <path d="M 22.20 -53.59 L 16.97 -16.97 L 53.59 -22.20 L 24.00 0.00 L 53.59 22.20 L 16.97 16.97 L 22.20 53.59 L 0.00 24.00 L -22.20 53.59 L -16.97 16.97 L -53.59 22.20 L -24.00 0.00 L -53.59 -22.20 L -16.97 -16.97 L -22.20 -53.59 L -0.00 -24.00 Z" class="fill-turquoise"/>
+    <path d="M 0.00 -30.00 L 4.59 -11.09 L 21.21 -21.21 L 11.09 -4.59 L 30.00 0.00 L 11.09 4.59 L 21.21 21.21 L 4.59 11.09 L 0.00 30.00 L -4.59 11.09 L -21.21 21.21 L -11.09 4.59 L -30.00 0.00 L -11.09 -4.59 L -21.21 -21.21 L -4.59 -11.09 Z" class="fill-gold"/>
+    <circle r="8" class="fill-madder"/>
+    <circle r="3.2" class="fill-ivory"/>
+  </g>
+</svg></div>
+      <div class="spandrel spandrel-br" aria-hidden="true"><svg viewBox="0 0 300 300" aria-hidden="true">
+  <g transform="translate(150 150)">
+    <circle r="128" class="fill-border"/>
+    <circle r="120" class="ring-gold" stroke-width="3"/>
+    <circle r="112" class="fill-madder"/>
+    <circle r="104" class="fill-ivory"/>
+    <circle r="100" class="ring-gold" stroke-width="1.6"/>
+    <path d="M 0.00 -96.00 L 15.31 -36.96 L 67.88 -67.88 L 36.96 -15.31 L 96.00 0.00 L 36.96 15.31 L 67.88 67.88 L 15.31 36.96 L 0.00 96.00 L -15.31 36.96 L -67.88 67.88 L -36.96 15.31 L -96.00 0.00 L -36.96 -15.31 L -67.88 -67.88 L -15.31 -36.96 Z" class="fill-border"/>
+    <path d="M 22.20 -53.59 L 16.97 -16.97 L 53.59 -22.20 L 24.00 0.00 L 53.59 22.20 L 16.97 16.97 L 22.20 53.59 L 0.00 24.00 L -22.20 53.59 L -16.97 16.97 L -53.59 22.20 L -24.00 0.00 L -53.59 -22.20 L -16.97 -16.97 L -22.20 -53.59 L -0.00 -24.00 Z" class="fill-turquoise"/>
+    <path d="M 0.00 -30.00 L 4.59 -11.09 L 21.21 -21.21 L 11.09 -4.59 L 30.00 0.00 L 11.09 4.59 L 21.21 21.21 L 4.59 11.09 L 0.00 30.00 L -4.59 11.09 L -21.21 21.21 L -11.09 4.59 L -30.00 0.00 L -11.09 -4.59 L -21.21 -21.21 L -4.59 -11.09 Z" class="fill-gold"/>
+    <circle r="8" class="fill-madder"/>
+    <circle r="3.2" class="fill-ivory"/>
+  </g>
+</svg></div>
+
+      <div class="band band-top" aria-hidden="true"><svg><defs><pattern id="edge-h" width="60" height="56" patternUnits="userSpaceOnUse">
+  <rect width="60" height="2" class="fill-gold"/>
+  <rect y="54" width="60" height="2" class="fill-gold"/>
+  <rect y="2" width="60" height="10" class="fill-ivory"/>
+  <polygon points="0,12 6,2 12,12" class="fill-madder"/>
+  <polygon points="12,12 18,2 24,12" class="fill-madder"/>
+  <polygon points="24,12 30,2 36,12" class="fill-madder"/>
+  <polygon points="36,12 42,2 48,12" class="fill-madder"/>
+  <polygon points="48,12 54,2 60,12" class="fill-madder"/>
+  <rect y="12" width="60" height="32" class="fill-border"/>
+  <polygon points="16.00,19.00 17.42,24.58 22.36,21.64 19.42,26.58 25.00,28.00 19.42,29.42 22.36,34.36 17.42,31.42 16.00,37.00 14.58,31.42 9.64,34.36 12.58,29.42 7.00,28.00 12.58,26.58 9.64,21.64 14.58,24.58" class="fill-gold"/>
+  <polygon points="17.61,24.12 17.20,26.80 19.88,26.39 17.70,28.00 19.88,29.61 17.20,29.20 17.61,31.88 16.00,29.70 14.39,31.88 14.80,29.20 12.12,29.61 14.30,28.00 12.12,26.39 14.80,26.80 14.39,24.12 16.00,26.30" class="fill-madder"/>
+  <circle cx="16" cy="28" r="1.5" class="fill-ivory"/>
+  <polygon points="30,24.2 33.4,28 30,31.8 26.6,28" class="fill-turquoise"/>
+  <g transform="translate(44 32)">
+    <circle cy="-8.4" r="2.9" class="fill-gold"/>
+    <circle cx="-5" cy="-5.6" r="2.5" class="fill-ivory"/>
+    <circle cx="5" cy="-5.6" r="2.5" class="fill-ivory"/>
+    <circle cx="-7.6" cy="-1.5" r="2.15" class="fill-gold"/>
+    <circle cx="7.6" cy="-1.5" r="2.15" class="fill-gold"/>
+    <circle r="3.15" class="fill-madder"/>
+    <circle r="1.35" class="fill-gold-bright"/>
+  </g>
+  <rect y="44" width="60" height="10" class="fill-ivory"/>
+  <circle cx="6" cy="49" r="2.15" class="fill-turquoise"/>
+  <circle cx="18" cy="49" r="2.15" class="fill-madder"/>
+  <circle cx="30" cy="49" r="2.15" class="fill-turquoise"/>
+  <circle cx="42" cy="49" r="2.15" class="fill-madder"/>
+  <circle cx="54" cy="49" r="2.15" class="fill-turquoise"/>
+</pattern></defs><rect width="100%" height="100%" fill="url(#edge-h)"/></svg></div>
+      <div class="band band-bottom" aria-hidden="true"><svg><defs><pattern id="edge-hb" width="60" height="56" patternUnits="userSpaceOnUse">
+  <rect width="60" height="2" class="fill-gold"/>
+  <rect y="54" width="60" height="2" class="fill-gold"/>
+  <rect y="2" width="60" height="10" class="fill-ivory"/>
+  <polygon points="0,12 6,2 12,12" class="fill-madder"/>
+  <polygon points="12,12 18,2 24,12" class="fill-madder"/>
+  <polygon points="24,12 30,2 36,12" class="fill-madder"/>
+  <polygon points="36,12 42,2 48,12" class="fill-madder"/>
+  <polygon points="48,12 54,2 60,12" class="fill-madder"/>
+  <rect y="12" width="60" height="32" class="fill-border"/>
+  <polygon points="16.00,19.00 17.42,24.58 22.36,21.64 19.42,26.58 25.00,28.00 19.42,29.42 22.36,34.36 17.42,31.42 16.00,37.00 14.58,31.42 9.64,34.36 12.58,29.42 7.00,28.00 12.58,26.58 9.64,21.64 14.58,24.58" class="fill-gold"/>
+  <polygon points="17.61,24.12 17.20,26.80 19.88,26.39 17.70,28.00 19.88,29.61 17.20,29.20 17.61,31.88 16.00,29.70 14.39,31.88 14.80,29.20 12.12,29.61 14.30,28.00 12.12,26.39 14.80,26.80 14.39,24.12 16.00,26.30" class="fill-madder"/>
+  <circle cx="16" cy="28" r="1.5" class="fill-ivory"/>
+  <polygon points="30,24.2 33.4,28 30,31.8 26.6,28" class="fill-turquoise"/>
+  <g transform="translate(44 32)">
+    <circle cy="-8.4" r="2.9" class="fill-gold"/>
+    <circle cx="-5" cy="-5.6" r="2.5" class="fill-ivory"/>
+    <circle cx="5" cy="-5.6" r="2.5" class="fill-ivory"/>
+    <circle cx="-7.6" cy="-1.5" r="2.15" class="fill-gold"/>
+    <circle cx="7.6" cy="-1.5" r="2.15" class="fill-gold"/>
+    <circle r="3.15" class="fill-madder"/>
+    <circle r="1.35" class="fill-gold-bright"/>
+  </g>
+  <rect y="44" width="60" height="10" class="fill-ivory"/>
+  <circle cx="6" cy="49" r="2.15" class="fill-turquoise"/>
+  <circle cx="18" cy="49" r="2.15" class="fill-madder"/>
+  <circle cx="30" cy="49" r="2.15" class="fill-turquoise"/>
+  <circle cx="42" cy="49" r="2.15" class="fill-madder"/>
+  <circle cx="54" cy="49" r="2.15" class="fill-turquoise"/>
+</pattern></defs><rect width="100%" height="100%" fill="url(#edge-hb)"/></svg></div>
+      <div class="band band-left" aria-hidden="true"><svg><defs><pattern id="edge-v" width="56" height="60" patternUnits="userSpaceOnUse">
+  <rect width="2" height="60" class="fill-gold"/>
+  <rect x="54" width="2" height="60" class="fill-gold"/>
+  <rect x="2" width="10" height="60" class="fill-ivory"/>
+  <polygon points="12,0 2,6 12,12" class="fill-madder"/>
+  <polygon points="12,12 2,18 12,24" class="fill-madder"/>
+  <polygon points="12,24 2,30 12,36" class="fill-madder"/>
+  <polygon points="12,36 2,42 12,48" class="fill-madder"/>
+  <polygon points="12,48 2,54 12,60" class="fill-madder"/>
+  <rect x="12" width="32" height="60" class="fill-border"/>
+  <polygon points="28.00,7.00 29.42,12.58 34.36,9.64 31.42,14.58 37.00,16.00 31.42,17.42 34.36,22.36 29.42,19.42 28.00,25.00 26.58,19.42 21.64,22.36 24.58,17.42 19.00,16.00 24.58,14.58 21.64,9.64 26.58,12.58" class="fill-gold"/>
+  <polygon points="29.61,12.12 29.20,14.80 31.88,14.39 29.70,16.00 31.88,17.61 29.20,17.20 29.61,19.88 28.00,17.70 26.39,19.88 26.80,17.20 24.12,17.61 26.30,16.00 24.12,14.39 26.80,14.80 26.39,12.12 28.00,14.30" class="fill-madder"/>
+  <circle cx="28" cy="16" r="1.5" class="fill-ivory"/>
+  <polygon points="24.2,30 28,26.6 31.8,30 28,33.4" class="fill-turquoise"/>
+  <g transform="translate(32 44)">
+    <circle cx="-8.4" r="2.9" class="fill-gold"/>
+    <circle cx="-5.6" cy="-5" r="2.5" class="fill-ivory"/>
+    <circle cx="-5.6" cy="5" r="2.5" class="fill-ivory"/>
+    <circle cx="-1.5" cy="-7.6" r="2.15" class="fill-gold"/>
+    <circle cx="-1.5" cy="7.6" r="2.15" class="fill-gold"/>
+    <circle r="3.15" class="fill-madder"/>
+    <circle r="1.35" class="fill-gold-bright"/>
+  </g>
+  <rect x="44" width="10" height="60" class="fill-ivory"/>
+  <circle cx="49" cy="6" r="2.15" class="fill-turquoise"/>
+  <circle cx="49" cy="18" r="2.15" class="fill-madder"/>
+  <circle cx="49" cy="30" r="2.15" class="fill-turquoise"/>
+  <circle cx="49" cy="42" r="2.15" class="fill-madder"/>
+  <circle cx="49" cy="54" r="2.15" class="fill-turquoise"/>
+</pattern></defs><rect width="100%" height="100%" fill="url(#edge-v)"/></svg></div>
+      <div class="band band-right" aria-hidden="true"><svg><defs><pattern id="edge-vr" width="56" height="60" patternUnits="userSpaceOnUse">
+  <rect width="2" height="60" class="fill-gold"/>
+  <rect x="54" width="2" height="60" class="fill-gold"/>
+  <rect x="2" width="10" height="60" class="fill-ivory"/>
+  <polygon points="12,0 2,6 12,12" class="fill-madder"/>
+  <polygon points="12,12 2,18 12,24" class="fill-madder"/>
+  <polygon points="12,24 2,30 12,36" class="fill-madder"/>
+  <polygon points="12,36 2,42 12,48" class="fill-madder"/>
+  <polygon points="12,48 2,54 12,60" class="fill-madder"/>
+  <rect x="12" width="32" height="60" class="fill-border"/>
+  <polygon points="28.00,7.00 29.42,12.58 34.36,9.64 31.42,14.58 37.00,16.00 31.42,17.42 34.36,22.36 29.42,19.42 28.00,25.00 26.58,19.42 21.64,22.36 24.58,17.42 19.00,16.00 24.58,14.58 21.64,9.64 26.58,12.58" class="fill-gold"/>
+  <polygon points="29.61,12.12 29.20,14.80 31.88,14.39 29.70,16.00 31.88,17.61 29.20,17.20 29.61,19.88 28.00,17.70 26.39,19.88 26.80,17.20 24.12,17.61 26.30,16.00 24.12,14.39 26.80,14.80 26.39,12.12 28.00,14.30" class="fill-madder"/>
+  <circle cx="28" cy="16" r="1.5" class="fill-ivory"/>
+  <polygon points="24.2,30 28,26.6 31.8,30 28,33.4" class="fill-turquoise"/>
+  <g transform="translate(32 44)">
+    <circle cx="-8.4" r="2.9" class="fill-gold"/>
+    <circle cx="-5.6" cy="-5" r="2.5" class="fill-ivory"/>
+    <circle cx="-5.6" cy="5" r="2.5" class="fill-ivory"/>
+    <circle cx="-1.5" cy="-7.6" r="2.15" class="fill-gold"/>
+    <circle cx="-1.5" cy="7.6" r="2.15" class="fill-gold"/>
+    <circle r="3.15" class="fill-madder"/>
+    <circle r="1.35" class="fill-gold-bright"/>
+  </g>
+  <rect x="44" width="10" height="60" class="fill-ivory"/>
+  <circle cx="49" cy="6" r="2.15" class="fill-turquoise"/>
+  <circle cx="49" cy="18" r="2.15" class="fill-madder"/>
+  <circle cx="49" cy="30" r="2.15" class="fill-turquoise"/>
+  <circle cx="49" cy="42" r="2.15" class="fill-madder"/>
+  <circle cx="49" cy="54" r="2.15" class="fill-turquoise"/>
+</pattern></defs><rect width="100%" height="100%" fill="url(#edge-vr)"/></svg></div>
+
+      <div class="corner corner-tl" aria-hidden="true"><svg viewBox="0 0 56 56" aria-hidden="true">
+  <rect width="56" height="56" class="fill-border"/>
+  <rect width="56" height="2.5" class="fill-gold"/>
+  <rect width="2.5" height="56" class="fill-gold"/>
+  <rect y="53.5" width="56" height="2.5" class="fill-gold"/>
+  <rect x="53.5" width="2.5" height="56" class="fill-gold"/>
+  <circle cx="28" cy="28" r="16" class="fill-ivory"/>
+  <polygon points="28.00,14.00 30.14,22.83 37.90,18.10 33.17,25.86 42.00,28.00 33.17,30.14 37.90,37.90 30.14,33.17 28.00,42.00 25.86,33.17 18.10,37.90 22.83,30.14 14.00,28.00 22.83,25.86 18.10,18.10 25.86,22.83" class="fill-gold"/>
+  <polygon points="30.37,22.27 29.77,26.23 33.73,25.63 30.50,28.00 33.73,30.37 29.77,29.77 30.37,33.73 28.00,30.50 25.63,33.73 26.23,29.77 22.27,30.37 25.50,28.00 22.27,25.63 26.23,26.23 25.63,22.27 28.00,25.50" class="fill-madder"/>
+  <circle cx="28" cy="28" r="2.1" class="fill-ivory"/>
+</svg></div>
+      <div class="corner corner-tr" aria-hidden="true"><svg viewBox="0 0 56 56" aria-hidden="true">
+  <rect width="56" height="56" class="fill-border"/>
+  <rect width="56" height="2.5" class="fill-gold"/>
+  <rect width="2.5" height="56" class="fill-gold"/>
+  <rect y="53.5" width="56" height="2.5" class="fill-gold"/>
+  <rect x="53.5" width="2.5" height="56" class="fill-gold"/>
+  <circle cx="28" cy="28" r="16" class="fill-ivory"/>
+  <polygon points="28.00,14.00 30.14,22.83 37.90,18.10 33.17,25.86 42.00,28.00 33.17,30.14 37.90,37.90 30.14,33.17 28.00,42.00 25.86,33.17 18.10,37.90 22.83,30.14 14.00,28.00 22.83,25.86 18.10,18.10 25.86,22.83" class="fill-gold"/>
+  <polygon points="30.37,22.27 29.77,26.23 33.73,25.63 30.50,28.00 33.73,30.37 29.77,29.77 30.37,33.73 28.00,30.50 25.63,33.73 26.23,29.77 22.27,30.37 25.50,28.00 22.27,25.63 26.23,26.23 25.63,22.27 28.00,25.50" class="fill-madder"/>
+  <circle cx="28" cy="28" r="2.1" class="fill-ivory"/>
+</svg></div>
+      <div class="corner corner-bl" aria-hidden="true"><svg viewBox="0 0 56 56" aria-hidden="true">
+  <rect width="56" height="56" class="fill-border"/>
+  <rect width="56" height="2.5" class="fill-gold"/>
+  <rect width="2.5" height="56" class="fill-gold"/>
+  <rect y="53.5" width="56" height="2.5" class="fill-gold"/>
+  <rect x="53.5" width="2.5" height="56" class="fill-gold"/>
+  <circle cx="28" cy="28" r="16" class="fill-ivory"/>
+  <polygon points="28.00,14.00 30.14,22.83 37.90,18.10 33.17,25.86 42.00,28.00 33.17,30.14 37.90,37.90 30.14,33.17 28.00,42.00 25.86,33.17 18.10,37.90 22.83,30.14 14.00,28.00 22.83,25.86 18.10,18.10 25.86,22.83" class="fill-gold"/>
+  <polygon points="30.37,22.27 29.77,26.23 33.73,25.63 30.50,28.00 33.73,30.37 29.77,29.77 30.37,33.73 28.00,30.50 25.63,33.73 26.23,29.77 22.27,30.37 25.50,28.00 22.27,25.63 26.23,26.23 25.63,22.27 28.00,25.50" class="fill-madder"/>
+  <circle cx="28" cy="28" r="2.1" class="fill-ivory"/>
+</svg></div>
+      <div class="corner corner-br" aria-hidden="true"><svg viewBox="0 0 56 56" aria-hidden="true">
+  <rect width="56" height="56" class="fill-border"/>
+  <rect width="56" height="2.5" class="fill-gold"/>
+  <rect width="2.5" height="56" class="fill-gold"/>
+  <rect y="53.5" width="56" height="2.5" class="fill-gold"/>
+  <rect x="53.5" width="2.5" height="56" class="fill-gold"/>
+  <circle cx="28" cy="28" r="16" class="fill-ivory"/>
+  <polygon points="28.00,14.00 30.14,22.83 37.90,18.10 33.17,25.86 42.00,28.00 33.17,30.14 37.90,37.90 30.14,33.17 28.00,42.00 25.86,33.17 18.10,37.90 22.83,30.14 14.00,28.00 22.83,25.86 18.10,18.10 25.86,22.83" class="fill-gold"/>
+  <polygon points="30.37,22.27 29.77,26.23 33.73,25.63 30.50,28.00 33.73,30.37 29.77,29.77 30.37,33.73 28.00,30.50 25.63,33.73 26.23,29.77 22.27,30.37 25.50,28.00 22.27,25.63 26.23,26.23 25.63,22.27 28.00,25.50" class="fill-madder"/>
+  <circle cx="28" cy="28" r="2.1" class="fill-ivory"/>
+</svg></div>
+      <div class="weave" aria-hidden="true"></div>
         <article class="card" aria-label="About me">
           <header class="header">
             <div class="avatar">
